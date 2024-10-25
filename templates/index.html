@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <title>Family Map</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+{% endblock %}
+
+{% block body %}
+  <input type="text" id="nameInput" placeholder="Enter name">
+  <button onclick="addNode()">Add Node</button>
+  <div id="canvas"></div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}
